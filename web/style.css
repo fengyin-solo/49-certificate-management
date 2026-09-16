@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f6f8;
+  color: #333;
+}
+header {
+  background: #1a73e8;
+  color: #fff;
+  padding: 16px 24px;
+}
+header h1 { margin: 0; font-size: 20px; }
+main { padding: 24px; max-width: 1200px; margin: 0 auto; }
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+section h2 { margin-top: 0; font-size: 16px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+#stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+.stat-card {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a73e8;
+}
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+}
+tr:hover { background: #fafafa; }
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.status-active { background: #e6f4ea; color: #137333; }
+.status-expired { background: #fce8e6; color: #c5221f; }
+.status-revoked { background: #f3e8fd; color: #8430ce; }
+.status-suspended { background: #fef7e0; color: #b06000; }
